@@ -37,7 +37,7 @@ export default defineConfig({
     lastUpdated: true,
 
     editLink: {
-      pattern: 'https://github.com/neovintageous/neovintageous.github.io/edit/master/:path',
+      pattern: 'https://github.com/neovintageous/neovintageous.github.io/edit/main/src/:path',
     },
 
     socialLinks: [
