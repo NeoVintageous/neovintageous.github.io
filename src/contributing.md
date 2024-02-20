@@ -22,9 +22,7 @@ Please ensure your pull request supports:
 
 Please check there are no unrelated changes.
 
-Please [sign your commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits) and a [commit message convention](https://github.com/vuejs/vitepress/blob/main/.github/commit-convention.md).
-
-Consider a [commit message convention](https://github.com/vuejs/vitepress/blob/main/.github/commit-convention.md).
+Please [sign your commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits) and consider a [commit message convention](https://github.com/vuejs/vitepress/blob/main/.github/commit-convention.md).
 
 ::: details Example flake8 and mypy install commands
 pip3 install flake8 flake8-docstrings pydocstyle mypy
