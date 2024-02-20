@@ -24,7 +24,7 @@ Vim reference: https://vimhelp.org
 | :white_check_mark:            | Visual line mode                   | `[count]V`
 | :white_check_mark:            | Visual block mode                  | `CTRL-v`
 | :white_check_mark:            | Replace mode                       | `R`
-|                               | Replace mode                       | `[count]R`
+|                               | Replace mode                       | `[count]R` [#1005](https://github.com/NeoVintageous/NeoVintageous/issues/1005)
 | :white_check_mark:            | Operator&#8209;pending&nbsp;mode   | Like Normal mode, but after an operator command has start, and Vim is waiting for a `{motion}` to specify the text that the operator will work on.
 | :white_check_mark:            | Command-line mode<br>Cmdline mode  | `:`, `/`, `?`, `!`
 | :white_check_mark: :star:     | Multiple-cursor mode               | `CTRL-n`, `gh`
