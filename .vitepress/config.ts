@@ -34,20 +34,6 @@ export default defineConfig({
 
   themeConfig: {
 
-    lastUpdated: true,
-
-    editLink: {
-      pattern: 'https://github.com/neovintageous/neovintageous.github.io/edit/main/src/:path',
-    },
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/NeoVintageous/NeoVintageous' },
-    ],
-
-    search: {
-      provider: 'local',
-    },
-
     nav: [
       // ...
     ],
@@ -104,5 +90,19 @@ export default defineConfig({
         ],
       },
     ],
+
+    lastUpdated: true,
+
+    editLink: {
+      pattern: 'https://github.com/neovintageous/neovintageous.github.io/edit/main/src/:path',
+    },
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/NeoVintageous/NeoVintageous' },
+    ],
+
+    search: {
+      provider: 'local',
+    },
   },
 })
