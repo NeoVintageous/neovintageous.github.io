@@ -98,6 +98,7 @@ export default defineConfig({
     },
 
     socialLinks: [
+      { icon: 'x', link: 'https://x.com/neovintageous' },
       { icon: 'github', link: 'https://github.com/NeoVintageous/NeoVintageous' },
     ],
 
