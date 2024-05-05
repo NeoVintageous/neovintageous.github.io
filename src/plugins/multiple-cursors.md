@@ -19,9 +19,11 @@ When you have entered multiple cursor mode, you use visual commands such as `c`,
 
 You can also go to Normal mode by pressing `v` and use normal commands there.
 
-At any time, you can press `<Esc>` to exit back to regular Vim.
+At any time, you can press `<Esc>` to exit back to regular Vim. To change the behaviour of `<Esc>`, see the [multi cursor exit from visual mode](#vintageous-multi-cursor-exit-from-visual-mode) setting.
 
-To change the behaviour of `<Esc>`, see the [multi cursor exit from visual mode](#vintageous-multi-cursor-exit-from-visual-mode) setting.
+::: info NOTE
+Match case sensitivity is controlled by the Sublime Text find widget. *Menu → Find → Find...* OR Enter insert mode and press CTRL-f. Toggle the Case sensitive "Aa" button.
+:::
 
 ::: tip
 Leverage visual block mode to create vertical multiple cursors
