@@ -8,47 +8,35 @@ outline: deep
 
 ### Prerequisites
 
-- [Sublime Text](https://www.sublimetext.com/) version 3 or higher.
-- [Package Control](https://packagecontrol.io/installation) for Package Control installation.
-- [Git](https://git-scm.com/) for Manual Git installation.
+- [Sublime Text](https://www.sublimetext.com/) `>=3`
+- [Package Control](https://packagecontrol.io/installation) or [Git](https://git-scm.com/) (for manual installation)
 
 ### Package Control installation
 
 1. Open the Command Palette: `Ctrl+Shift+P` (Win/Linux) or `Cmd+Shift+P` (Mac).
 1. Type "Package Control: Install Package" and press Enter.
-1. In the input field, type "NeoVintageous" and select it from the list of available packages.
-
-::: info NOTE
-You may need to restart Sublime Text.
-:::
+1. In the input field, type "**NeoVintageous**" and select it from the list of packages.
+1. Restart Sublime Text.
 
 ### Manual Git installation
 
-1. Open a terminal or command prompt.
-1. Navigate to the Sublime Text Packages directory:
+1. Clone NeoVintageous into the Sublime Text directory:
    ::: code-group
    ``` [Linux]
-   ~/.config/sublime-text/Packages
+   git clone https://github.com/NeoVintageous/NeoVintageous.git ~/.config/sublime-text/Packages/NeoVintageous
    ```
    ``` [Mac]
-   ~/Library/Application Support/Sublime Text/Packages
+   git clone https://github.com/NeoVintageous/NeoVintageous.git ~/Library/Application Support/Sublime Text/Packages/NeoVintageous
    ```
    ``` [Windows]
-   %APPDATA%\Sublime Text\Packages
+   git clone https://github.com/NeoVintageous/NeoVintageous.git %APPDATA%\Sublime Text\Packages\NeoVintageous
    ```
    :::
-1. Clone NeoVintageous directly into the Packages directory:
-   ```bash
-   git clone https://github.com/NeoVintageous/NeoVintageous.git
-   ```
-
-::: info NOTE
-You may need to restart Sublime Text.
-:::
+1. Restart Sublime Text
 
 ## Install additional plugins
 
-Some features require additional plugins. See the [plugins](/plugins) documentation for more details.
+See [plugins](/plugins) for more details.
 
 ## Enable pre-releases
 
@@ -68,9 +56,7 @@ Pre-release versions allow you to access the latest features, improvements, and 
 
 1. After saving the settings, you can now install the pre-release version of NeoVintageous. Open the Command Palette again and type `Package Control: Upgrade Package` to install the pre-release version.
 
-::: info NOTE
-You may need to restart Sublime Text.
-:::
+1. Restart Sublime Text.
 
 ::: info
 Pre-release versions can contain experimental features and changes that are still being refined. If you encounter issues or have feedback, please feel free to share them with us. See [contributing](/contributing) for more details.

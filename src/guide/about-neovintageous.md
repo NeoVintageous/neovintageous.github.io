@@ -16,7 +16,7 @@ Vim's full documentation is accessible via `:help {subject}` and [online](https:
 
 ## :notebook: Blog
 
-Check out [blog.gerardroche.com](https://blog.gerardroche.com) where you can get updates, tips, and opinions from the [maintainer](https://x.com/gerardroche_).
+Check out [blog.gerardroche.com](https://blog.gerardroche.com) for updates, tips, and opinions from the maintainer.
 
 ## :bug: Bug reports
 
