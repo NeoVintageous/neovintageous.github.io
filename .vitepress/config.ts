@@ -41,7 +41,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Prologue',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: 'Contributing', link: 'contributing.md' },
           { text: 'Roadmap', link: '/roadmap' },
@@ -52,7 +52,7 @@ export default defineConfig({
       },
       {
         text: 'Guide',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: 'About NeoVintageous', link: '/guide/about-neovintageous' },
           { text: 'Getting started', link: '/guide/getting-started' },
@@ -61,7 +61,7 @@ export default defineConfig({
       {
         text: 'Plugins',
         link: '/plugins',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: 'Abolish', link: '/plugins/abolish' },
           { text: 'Commentary', link: '/plugins/commentary' },
@@ -78,7 +78,7 @@ export default defineConfig({
       },
       {
         text: 'Reference',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: 'GUI', link: '/reference/gui' },
           { text: 'Settings', link: '/reference/settings' },
