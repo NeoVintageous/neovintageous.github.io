@@ -24,7 +24,7 @@ For a comprehensive list of supported plugin features kindly consult the [roadma
 
 ## Additional features plugins
 
-- [NeoVintageous Files](https://github.com/gerardroche/NeoVintageousFiles) - File commands.
+- [NeoVintageous Files](https://github.com/gerardroche/NeoVintageousFiles) - Enhance browsing files in the sidebar and overlays.
 - [NeoVintageous Highlight Line](https://github.com/gerardroche/NeoVintageousHighlightLine) - Auto-disable Highlight Line in Insert mode.
 - [NeoVintageous Line Numbers](https://github.com/gerardroche/NeoVintageousLineNumbers) - Auto-disable Relative Line Numbers in Insert mode.
 - [NeoVintageous Toggle](https://github.com/NeoVintageous/NeoVintageousToggle) - Toggle NeoVintageous on/off.

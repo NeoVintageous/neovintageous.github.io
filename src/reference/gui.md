@@ -6,21 +6,21 @@ To focus on the sidebar press `CTRL-0`.
 
 | Key   | Description
 | :---- | :----------
-| `J`   | Go to last child.
-| `P`   | Go to root.
-| `h`   | Left.
+| `J`   | Go to last child node.
+| `P`   | Go to root node.
+| `h`   | Close node.
 | `j`   | Down.
 | `k`   | Up.
-| `l`   | Right.
-| `p`   | Go to parent.
-| `q`   | Close.
+| `l`   | Open node.
+| `p`   | Go to parent node.
+| `q`   | Close sidebar.
 
 ::: tip
-Create a mapping to [toggle the sidebar](/reference/key-mapping#mapping-for-toggling-the-sidebar).
+Try [NeoVintageousFiles](https://github.com/gerardroche/NeoVintageousFiles) for additional sidebar commands.
 :::
 
 ::: tip
-Try the [NeoVintageousFiles](https://github.com/gerardroche/NeoVintageousFiles) for additional sidebar commands.
+Create a mapping to [toggle the sidebar](/reference/key-mapping#mapping-for-toggling-the-sidebar).
 :::
 
 ## Overlay navigation
