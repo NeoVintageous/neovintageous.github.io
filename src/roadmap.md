@@ -1,10 +1,10 @@
 # Roadmap
 
-:white_check_mark: - done
+:white_check_mark: Implemented
 
-:star: - additional Sublime Text specific behaviour
+:star: Sublime Text specific; Non-Vim behaviour
 
-`[count]` - An optional number that may precede the command to multiply or iterate the command.
+`[count]` An optional number that may precede the command to multiply or iterate the command.
 
 Vim reference: https://vimhelp.org
 
@@ -16,7 +16,7 @@ Vim reference: https://vimhelp.org
 
 - Vim reference: [vim-modes](https://vimhelp.org/intro.txt.html#vim-modes)
 
-| Status                        | Mode                               | Description
+|                               | Mode                               | Description
 | :---------------------------- | :----------------------------------| :----------
 | :white_check_mark:            | Insert mode                        | `[count]i`
 | :white_check_mark:            | Normal mode                        | `<Esc>`, `CTRL-[`, `CTRL-c`
@@ -27,13 +27,13 @@ Vim reference: https://vimhelp.org
 |                               | Replace mode                       | `[count]R` [#1005](https://github.com/NeoVintageous/NeoVintageous/issues/1005)
 | :white_check_mark:            | Operator&#8209;pending&nbsp;mode   | Like Normal mode, but after an operator command has start, and Vim is waiting for a `{motion}` to specify the text that the operator will work on.
 | :white_check_mark:            | Command-line mode<br>Cmdline mode  | `:`, `/`, `?`, `!`
-| :white_check_mark: :star:     | Multiple-cursor mode               | `CTRL-n`, `gh`
+| :white_check_mark:            | Multiple-cursor mode               | `CTRL-n`, `gh` :star:
 
 ## About using the help files
 
 - Vim reference: [helphelp.txt](https://vimhelp.org/helphelp.txt.html)
 
-| Status             | Command   | Description
+|                    | Command   | Description
 | :----------------- | :-------- | :----------
 | :white_check_mark: | `:h[elp]` | Open a window and display the help file in read-only mode.
 | :white_check_mark: | <code>:h[elp]&nbsp;\{subject\}</code> | Like ":help", additionally jump to the tag `{subject}`. Example: `:help options`
@@ -44,10 +44,10 @@ Vim reference: https://vimhelp.org
 
 ### 1. Introduction
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | `CTRL-G`<br>`:f[ile]`            | Prints the current file name.
-| :white_check_mark: | `:buffers`<br>`:files`<br>`:ls`  | List all the currently known file names.<br>:star: Multiple cursors are presented as a comma-delimited list of line numbers.
+| :white_check_mark: | `:buffers`<br>`:files`<br>`:ls`  | List all the currently known file names. *Multiple cursors are presented as a comma-delimited list of line numbers.*
 | :white_check_mark: | `:e[dit]`                        | Edit the current file. This is useful to re-edit the current file, when it has been changed outside of Sublime.
 | :white_check_mark: | `:e[dit]!`                       | Edit the current file always.  Discard any changes to the current buffer. This is useful if you want to start all over again.
 | :white_check_mark: | <code>:e[dit]&nbsp;\{file\}</code> | Edit `{file}`.
@@ -60,7 +60,7 @@ Vim reference: https://vimhelp.org
 
 ### 4. Writing
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | `:w[rite]`                       | Write the whole buffer to the current file.  This is the normal way to save changes to a file.
 | :white_check_mark: | `:w[rite]!`                      | Like ":write", but forcefully write when there is another reason why writing was refused.
@@ -68,14 +68,14 @@ Vim reference: https://vimhelp.org
 
 WRITING WITH MULTIPLE BUFFERS
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | `:wa[ll]`                        | Write all changed buffers.  Buffers without a file name cause an error message.  Buffers which are readonly are not written.
 | :white_check_mark: | `:wa[ll]!`                       | Write all changed buffers, even the ones that are readonly.  Buffers without a file name are not written and cause an error message.
 
 ### 5. Writing and quitting
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | `:q[uit]`                        | Quit the current window.  Quit Sublime if this is the last view. See `CTRL-W_q` for quitting another window.
 | :white_check_mark: | `:q[uit]!`                       | Quit without writing, also when the current buffer has changes. Use ":qall!" to exit always.
@@ -91,7 +91,7 @@ WRITING WITH MULTIPLE BUFFERS
 
 MULTIPLE WINDOWS AND BUFFERS
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | `:qa[ll]`                        | Exit Vim, unless there are some buffers which have been changed.
 | :white_check_mark: | `:qa[ll]!`                       | Exit Vim.  Any changes to buffers are lost.
@@ -101,13 +101,13 @@ MULTIPLE WINDOWS AND BUFFERS
 
 ### 6. Dialogs
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | `:bro[wse]`                      | Open a file selection dialog.
 
 ### 7. The current directory
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | :cd[!]                           | Change the current directory to the home directory. Use `:pwd` to print the current directory.
 | :white_check_mark: | :cd[!]&nbsp;\{path\}             | Change the current directory to `{path}`. To change to the directory of the current file: `:cd %:h`.
@@ -121,7 +121,7 @@ MULTIPLE WINDOWS AND BUFFERS
 
 - Vim reference: `operator`
 
-| Status             | Command   | Description
+|                    | Command   | Description
 | :----------------- | :-------- | :----------
 | :white_check_mark: | `c`       | change
 | :white_check_mark: | `d`       | delete
@@ -141,7 +141,7 @@ MULTIPLE WINDOWS AND BUFFERS
 
 FORCING A MOTION TO BE LINEWISE, CHARACTERWISE OR BLOCKWISE
 
-| Status             | Command   | Description
+|                    | Command   | Description
 | :----------------- | :-------- | :----------
 |                    | v         | When used after an operator, before the motion command: Force the operator to work characterwise, also when the motion is linewise.  If the motion was linewise, it will become `exclusive`.<br> If the motion already was characterwise, toggle inclusive/exclusive.  This can be used to make an exclusive motion inclusive and an inclusive motion exclusive. [#90](https://github.com/NeoVintageous/NeoVintageous/issues/90)
 |                    | V         | When used after an operator, before the motion command: Force the operator to work linewise, also when the motion is characterwise. [#90](https://github.com/NeoVintageous/NeoVintageous/issues/90)
@@ -151,7 +151,7 @@ FORCING A MOTION TO BE LINEWISE, CHARACTERWISE OR BLOCKWISE
 
 - Vim reference: `left-right-motions`
 
-| Status             | Command                              | Description
+|                    | Command                              | Description
 | :----------------- | :----------------------------------- | -----------
 | :white_check_mark: | `h`, `<Left>`, `CTRL-H`, `<BS>`      | `[count]` characters to the left.
 | :white_check_mark: | `l`, `<Right>`, `<Space>`            | `[count]` characters to the right.
@@ -177,7 +177,7 @@ FORCING A MOTION TO BE LINEWISE, CHARACTERWISE OR BLOCKWISE
 
 - Vim reference: `up-down-motions`
 
-| Status             | Command                                    | Description
+|                    | Command                                    | Description
 | :----------------- | :----------------------------------------- | -----------
 | :white_check_mark: | `k`, `<Up>`, `CTRL-P`                      | `[count]` lines upward.
 | :white_check_mark: | `j`, `<Down>`, `CTRL-J`, `<NL>`, `CTRL-N`  | `[count]` lines downward.
@@ -197,7 +197,7 @@ FORCING A MOTION TO BE LINEWISE, CHARACTERWISE OR BLOCKWISE
 
 - Vim reference: `word-motions`
 
-| Status             | Command            | Description
+|                    | Command            | Description
 | :----------------- | :----------------- | -----------
 | :white_check_mark: | w<br>`<S-Right>`   | `[count]` words forward.
 | :white_check_mark: | W<br>`<C-Right>`   | `[count]` WORDS forward.
@@ -212,7 +212,7 @@ FORCING A MOTION TO BE LINEWISE, CHARACTERWISE OR BLOCKWISE
 
 - Vim reference: `object-motions`
 
-| Status             | Command  | Description
+|                    | Command  | Description
 | :----------------- | :------- | -----------
 | :white_check_mark: | `(`      | a `sentence` backward.
 | :white_check_mark: | `)`      | a `sentence` forward.
@@ -227,7 +227,7 @@ FORCING A MOTION TO BE LINEWISE, CHARACTERWISE OR BLOCKWISE
 
 - Vim reference: `text-objects`
 
-| Status             | Command                       | Description
+|                    | Command                       | Description
 | :----------------- | :---------------------------- | -----------
 | :white_check_mark: | `aw`                          | "a word", select `[count]` words.
 | :white_check_mark: | `iw`                          | "inner word", select `[count]` words.
@@ -254,7 +254,7 @@ FORCING A MOTION TO BE LINEWISE, CHARACTERWISE OR BLOCKWISE
 
 - Vim reference: `mark-motions`
 
-| Status             | Command                              | Description
+|                    | Command                              | Description
 | :----------------- | :------------------------------------| -----------
 | :white_check_mark: | `m{a-zA-Z}`                          | Set mark `{a-zA-Z}` at cursor position (does not move the cursor, this is not a motion command).
 | :white_check_mark: | `'{a-z}`<br><code>\`\{a-z\}</code>   | Jump to the mark `{a-z}` in the current buffer.
@@ -270,14 +270,14 @@ FORCING A MOTION TO BE LINEWISE, CHARACTERWISE OR BLOCKWISE
 
 - Vim reference: `jump-motions`
 
-| Status             | Command                        | Description
+|                    | Command                        | Description
 | :----------------- | :----------------------------- | -----------
 | :white_check_mark: | `CTRL-o`                       | Go to `[count]` older cursor position in jump list (not a motion command).
 | :white_check_mark: | `<Tab>`<br>`CTRL-i`            | Go to `[count]` newer cursor position in jump list (not a motion command).
 
 CHANGE LIST JUMPS
 
-| Status             | Command                        | Description
+|                    | Command                        | Description
 | :----------------- | :----------------------------- | -----------
 |                    | `g;`                           | Go to `[count]` older position in change list. If `[count]` is larger than the number of older change positions go to the oldest change. If there is no older change an error message is given. (not a motion command)
 |                    | `g,`                           | Go to `[count]` newer position in change list. Just like `g;` but in the opposite direction. (not a motion command)
@@ -286,7 +286,7 @@ CHANGE LIST JUMPS
 
 - Vim reference: `various-motions`
 
-| Status             | Command  | Description
+|                    | Command  | Description
 | :----------------- | :------- | -----------
 | :white_check_mark: | `%`      | Find the next item in this line after or under the cursor and jump to its match.
 | :white_check_mark: | `[(`     | Go to previous unmatched '('.
@@ -305,7 +305,7 @@ CHANGE LIST JUMPS
 
 The following commands move the edit window (the part of the buffer that you see) downwards (this means that more lines downwards in the text buffer can be seen):
 
-| Status             | Command                                        | Description
+|                    | Command                                        | Description
 | :----------------- | :--------------------------------------------- | :----------
 | :white_check_mark: | CTRL-E                                         | Scroll window `[count]` lines downwards in the buffer. The text moves upwards on the screen. Mnemonic: Extra lines.
 | :white_check_mark: | CTRL-D                                         | Scroll window Downwards in the buffer.  The number of lines comes from the `'scroll'` option (default: half a screen).  If `[count]` given, first set `'scroll'` option to `[count]`.  The cursor is moved the same number of lines down in the file (if possible; when lines wrap and when hitting the end of the file there may be a difference).  When the cursor is on the last line of the buffer nothing happens and a beep is produced.
@@ -315,7 +315,7 @@ The following commands move the edit window (the part of the buffer that you see
 
 The following commands move the edit window (the part of the buffer that you see) upwards (this means that more lines upwards in the text buffer can be seen):
 
-| Status             | Command                                        | Description
+|                    | Command                                        | Description
 | :----------------- | :--------------------------------------------- | :----------
 | :white_check_mark: | `CTRL-Y`                                       | Scroll window `[count]` lines upwards in the buffer. The text moves downwards on the screen.
 | :white_check_mark: | `CTRL-U`                                       | Scroll window Upwards in the buffer.  The number of lines comes from the `'scroll'` option (default: half a screen).  If `[count]` given, first set the `'scroll'` option to `[count]`.  The cursor is moved the same number of lines up in the file (if possible; when lines wrap and when hitting the end of the file there may be a difference).  When the cursor is on the first line of the buffer nothing happens and a beep is produced.
@@ -329,7 +329,7 @@ The following commands reposition the edit window (the part of the buffer that y
 The `'scrolloff'` option adds context lines above and below the cursor.
 :::
 
-| Status             | Command                                        | Description
+|                    | Command                                        | Description
 | :----------------- | :--------------------------------------------- | :----------
 | :white_check_mark: | `z<CR>`                                        | Redraw, line `[count]` at top of window (default cursor line).  Put cursor at first non-blank in the line.
 | :white_check_mark: | `zt`                                           | Like "z`<CR>`", but leave the cursor in the same column.
@@ -343,7 +343,7 @@ The `'scrolloff'` option adds context lines above and below the cursor.
 
 For the following four commands the cursor follows the screen.  If the character that the cursor is on is moved off the screen, the cursor is moved to the closest character that is on the screen.  The value of `'sidescroll'` is not used.
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | `z<Right>`<br>`zl`               | Move the view on the text `[count]` characters to the right, thus scroll the text `[count]` characters to the left.  This only works when `'wrap'` is off.
 | :white_check_mark: | `z<Left>`<br>`zh`                | Move the view on the text `[count]` characters to the left, thus scroll the text `[count]` characters to the right.  This only works when `'wrap'` is off.
@@ -356,7 +356,7 @@ For the following four commands the cursor follows the screen.  If the character
 
 ### 1. Special keys
 
-| Status             | Command                                        | Description
+|                    | Command                                        | Description
 | :----------------- | :--------------------------------------------- | :----------
 | :white_check_mark: | CTRL-[<br>`<Esc>`                              | End insert or Replace mode, go back to Normal mode. Note: If your `<Esc>` key is hard to hit on your keyboard, train yourself to use `CTRL-[`.
 | :white_check_mark: | CTRL-C                                         | Quit insert mode, go back to Normal mode.
@@ -364,7 +364,7 @@ For the following four commands the cursor follows the screen.  If the character
 
 ### 2. Special special keys
 
-| Status             | Command                                        | Description
+|                    | Command                                        | Description
 | :----------------- | :--------------------------------------------- | :----------
 | :white_check_mark: | `<Left>`                                       | Cursor one character left.
 | :white_check_mark: | `<Right>`                                      | Cursor one character right.
@@ -373,7 +373,7 @@ For the following four commands the cursor follows the screen.  If the character
 
 Completing whole lines
 
-| Status             | Command                                        | Description
+|                    | Command                                        | Description
 | :----------------- | :--------------------------------------------- | :----------
 | :white_check_mark: | CTRL-X CTRL-L                                  | Search backwards for a line that starts with the same characters as those in the current line before the cursor.  Indent is ignored.  The matching line is inserted in front of the cursor.
 | :white_check_mark: | CTRL-N                                         | Search forward for next matching line.  This line replaces the previous matching line.
@@ -382,7 +382,7 @@ Completing whole lines
 
 Completing keywords in current file
 
-| Status             | Command                                        | Description
+|                    | Command                                        | Description
 | :----------------- | :--------------------------------------------- | :----------
 |                    | CTRL-X CTRL-N                                  |
 |                    | CTRL-N                                         | Search forward for next matching keyword.  This keyword replaces the previous matching keyword.
@@ -390,7 +390,7 @@ Completing keywords in current file
 
 Completing file names
 
-| Status             | Command                                        | Description
+|                    | Command                                        | Description
 | :----------------- | :--------------------------------------------- | :----------
 |                    | CTRL-X CTRL-F                                  | Search for the first file name that starts with the same characters as before the cursor.  The matching file name is inserted in front of the cursor.
 |                    | CTRL-N                                         | Search forwards for next matching file name.  This file name replaces the previous matching file name.
@@ -399,7 +399,7 @@ Completing file names
 
 Completing tags
 
-| Status             | Command                                        | Description
+|                    | Command                                        | Description
 | :----------------- | :--------------------------------------------- | :----------
 |                    | CTRL-X CTRL-]                                  | Search for the first tag that starts with the same characters as before the cursor.  The matching tag is inserted in front of the cursor.  See also CTRL-].
 |                    | CTRL-N                                         | Search forwards for next matching tag.  This tag replaces the previous matching tag.
@@ -408,7 +408,7 @@ Completing tags
 
 Completing keywords from different sources
 
-| Status             | Command                                        | Description
+|                    | Command                                        | Description
 | :----------------- | :--------------------------------------------- | :----------
 | :white_check_mark: | CTRL-N                                         | Find next match for words that start with the keyword in front of the cursor.
 | :white_check_mark: | CTRL-P                                         | Find previous match for words that start with the keyword in front of the cursor.
@@ -419,7 +419,7 @@ Completing keywords from different sources
 
 The following commands can be used to insert new text into the buffer.  They can all be undone and repeated with the "." command.
 
-| Status             | Command                                        | Description
+|                    | Command                                        | Description
 | :----------------- | :--------------------------------------------- | :----------
 | :white_check_mark: | a                                              | Append text after the cursor `[count]` times.  If the cursor is in the first column of an empty line Insert starts there.  But not when `'virtualedit'` is set!
 | :white_check_mark: | A                                              | Append text at the end of the line `[count]` times.
@@ -436,7 +436,7 @@ The following commands can be used to insert new text into the buffer.  They can
 
 ### 1. Deleting text
 
-| Status             | Command                                                                | Description
+|                    | Command                                                                | Description
 | :----------------- | :--------------------------------------------------------------------- | :----------
 | :white_check_mark: | ["x]`<Del>` or<br>["x]x                                                | Delete `[count]` characters under and after the cursor [into register x] (not `linewise`).  Does the same as "dl".
 | :white_check_mark: | ["x]X                                                                  | Delete `[count]` characters before the cursor [into register x] (not `linewise`).  Does the same as "dh".
@@ -447,7 +447,7 @@ The following commands can be used to insert new text into the buffer.  They can
 | :white_check_mark: | `{Visual}`["x]X<br>`{Visual}`["x]D                                     | Delete the highlighted lines [into register x] (for `{Visual}` see `Visual-mode`).  In Visual block mode, "D" deletes the highlighted text plus all text until the end of the line.
 | :white_check_mark: | :`[range]`d[elete]&nbsp;[x]                                            | Delete `[range]` lines (default: current line) [into register x].
 
-| Status             | Command                      | Description
+|                    | Command                      | Description
 | :----------------- | :--------------------------- | :----------
 | :white_check_mark: | J                            | Join `[count]` lines, with a minimum of two lines. Remove the indent and insert up to two spaces (see below).  Fails when on the last line of the buffer. If `[count]` is too big it is reduced to the number of lines available.
 | :white_check_mark: | `{Visual}`J                  | Join the highlighted lines, with a minimum of two lines.  Remove the indent and insert up to two spaces (see below).
@@ -456,7 +456,7 @@ The following commands can be used to insert new text into the buffer.  They can
 
 ### 2. Delete and insert
 
-| Status             | Command                                                                | Description
+|                    | Command                                                                | Description
 | :----------------- | :--------------------------------------------------------------------- | :----------
 | :white_check_mark: | R                                                                      | Enter Replace mode: Each character you type replaces an existing character, starting with the character under the cursor.
 | :white_check_mark: | ["x]c\{motion\}                                                        | Delete `{motion}` text [into register x] and start insert.
@@ -472,13 +472,13 @@ The following commands can be used to insert new text into the buffer.  They can
 
 ### 3. Simple changes
 
-| Status             | Command      | Description
+|                    | Command      | Description
 | :----------------- | :----------- | :----------
 | :white_check_mark: | r\{char\}    | Replace the character under the cursor with `{char}`.
 
 The following commands change the case of letters.
 
-| Status             | Command          | Description
+|                    | Command          | Description
 | :----------------- | :--------------- | :----------
 | :white_check_mark: | \~               | `'notildeop'` option: Switch case of the character under the cursor and move the cursor to the right. If a `[count]` is given, do that many characters.
 |                    | \~\{motion\}     | `'tildeop'` option: switch case of `{motion}` text.
@@ -494,7 +494,7 @@ The following commands change the case of letters.
 
 Adding and subtracting
 
-| Status             | Command                      | Description
+|                    | Command                      | Description
 | :----------------- | :--------------------------- | :----------
 | :white_check_mark: | CTRL-A                       | Add `[count]` to the number or alphabetic character at or after the cursor.
 | :white_check_mark: | \{Visual\}CTRL-A             | Add `[count]` to the number or alphabetic character in the highlighted text.
@@ -505,7 +505,7 @@ Adding and subtracting
 
 SHIFTING LINES LEFT OR RIGHT
 
-| Status             | Command                      | Description
+|                    | Command                      | Description
 | :----------------- | :--------------------------- | :----------
 | :white_check_mark: | &lt;\{motion\}               | Shift `{motion}` lines leftwards.
 | :white_check_mark: | &lt;                         | Shift `[count]` lines leftwards.
@@ -516,7 +516,7 @@ SHIFTING LINES LEFT OR RIGHT
 
 ### 4. Complex changes
 
-| Status             | Command                                                                              | Description
+|                    | Command                                                                              | Description
 | :----------------- | :----------------------------------------------------------------------------------- | :----------
 | :white_check_mark: | =\{motion\}                                                                          | Filter `{motion}` lines through the re-indent command.
 | :white_check_mark: | ==                                                                                   | Filter `[count]` lines like with `={motion}`.
@@ -524,7 +524,7 @@ SHIFTING LINES LEFT OR RIGHT
 
 #### 4.2 Substitute
 
-| Status             | Command                                                                              | Description
+|                    | Command                                                                              | Description
 | :----------------- | :----------------------------------------------------------------------------------- | :----------
 | :white_check_mark: | `:[range]s[ubstitute]/{pattern}/{string}/[flags] [count]`                            | For each line in `[range]` replace a match of \{pattern\} with \{string\}. When `[range]` and `[count]` are omitted, replace in the current line only.  When `[count]` is given, replace in `[count]` lines, starting with the last line in `[range]`. When `[range]` is omitted start in the current line. `[count]` must be a positive number. See `:s_flags` for `[flags]`.
 | :white_check_mark: | `:[range]s[ubstitute] [flags] [count]`<br><br>`:[range]&[&][flags] [count]`          | Repeat last :substitute with same search pattern and substitute string, but without the same flags.  You may add `[flags]`, see `:s_flags`.
@@ -533,7 +533,7 @@ SHIFTING LINES LEFT OR RIGHT
 
 The flags that you can use for the substitute commands:
 
-| Status             | Flag  | Description
+|                    | Flag  | Description
 | :----------------- | :---- | :----------
 | :white_check_mark: | `[c]` | Confirm each substitution.
 |                    | `[&]` | Must be the first one: Keep the flags from the previous substitute command.  Examples: `:&& :s/this/that/&`. Note that `:s` and `:&` don't keep the flags.
@@ -543,7 +543,7 @@ The flags that you can use for the substitute commands:
 
 ### 5. Copying and moving text
 
-| Status             | Command                              | Description
+|                    | Command                              | Description
 | :----------------- | :----------------------------------- | :----------
 | :white_check_mark: | `"{register}`                        | Use `{register}` for next delete, yank or put.  Use an uppercase character to append with delete and yank. Registers ".", "%", "#" and ":" only work with put.
 | :white_check_mark: | `:reg[isters]`                       | Display the type and contents of all numbered and named registers.
@@ -563,7 +563,7 @@ The flags that you can use for the substitute commands:
 There are ten types of registers:
 
 
-| Status             | #   | Type
+|                    | #   | Type
 | :----------------- | :-- | :---
 | :white_check_mark: | 1.  | The unnamed register ""
 | :white_check_mark: | 2.  | 10 numbered registers "0 to "9
@@ -580,14 +580,14 @@ There are ten types of registers:
 
 The next two commands always work on whole lines.
 
-| Status             | Command                                      | Description
+|                    | Command                                      | Description
 | :----------------- | :------------------------------------------- | :----------
 | :white_check_mark: | <code>:[range]co[py]&nbsp;\{address\}</code> | Copy the lines given by `[range]` to below the line given by `{address}`.
 | :white_check_mark: | <code>:[range]m[ove]&nbsp;\{address\}</code> | Move the lines given by `[range]` to below the line given by `{address}`.
 
 ### 6. Formatting text
 
-| Status             | Command                        | Description
+|                    | Command                        | Description
 | :----------------- | :----------------------------- | :----------
 | :white_check_mark: | `gq{motion}`                   | Format the lines that `{motion}` moves over. Formatting is done internally. The `'textwidth'` option controls the length of each formatted line (see below). If the `'textwidth'` option is 0, the formatted line length is the screen width (with a maximum width of 79). NOTE: The "Q" command formerly performed this function.  If you still want to use "Q" for formatting, use this mapping: `:nnoremap Q gq`.
 | :white_check_mark: | `gqgq`<br>`gqq`                | Format the current line.  With a count format that many lines.
@@ -595,7 +595,7 @@ The next two commands always work on whole lines.
 
 ### 7. Sorting text
 
-| Status             | Command                                    | Description
+|                    | Command                                    | Description
 | :----------------- | ------------------------------------------ | :----------
 | :white_check_mark: | <code>:[range]sor[t]!&nbsp;[i][u]</code>   | Sort lines in `[range]`.  When no range is given all lines are sorted. <br><br>With `[!]` the order is reversed. <br><br>With `[i]` case is ignored.<br><br>With `[u]` (u stands for unique) only keep the first of a sequence of identical lines (ignoring case when `[i]` is used).  Without this flag, a sequence of identical lines will be kept in their original order. Note that leading and trailing white space may cause lines to be different.
 
@@ -603,7 +603,7 @@ The next two commands always work on whole lines.
 
 - Vim reference: [undo.txt](https://vimhelp.org/undo.txt.html)
 
-| Status             | Command                      | Description
+|                    | Command                      | Description
 | :----------------- | :--------------------------- | -----------
 | :white_check_mark: | `u`                          | Undo `[count]` changes
 | :white_check_mark: | `CTRL-R`                     | Redo `[count]` changes which were undone
@@ -615,7 +615,7 @@ The next two commands always work on whole lines.
 
 ### 1. Single repeats
 
-| Status             | Command                      | Description
+|                    | Command                      | Description
 | :----------------- | :--------------------------- | -----------
 | :white_check_mark: | `[count].`                   | Repeat last change, with count replaced with `[count]`. Does not repeat a command-line command.
 
@@ -623,13 +623,13 @@ Simple changes can be repeated with the "." command.  Without a count, the
 count of the last change is used.  If you enter a count, it will replace the
 last one.
 
-| Status             | Command                      | Description
+|                    | Command                      | Description
 | :----------------- | :--------------------------- | -----------
 |                    | `@:`                         | Repeat last command-line `[count]` times
 
 ### 2. Multiple repeats
 
-| Status             | Command                                  | Description
+|                    | Command                                  | Description
 | :----------------- | :--------------------------------------- | -----------
 | :white_check_mark: | `:[range]g[lobal]/{pattern}/[cmd]`       | Execute the Ex command `[cmd]` (default ":p") on the lines within `[range]` where `{pattern}` matches. *Currently only works with a few commands like print.*
 | :white_check_mark: | `:[range]g[lobal]!/{pattern}/[cmd]`      | Execute the Ex command `[cmd]` (default ":p") on the lines within `[range]` where `{pattern}` does NOT match. *Currently only works with a few commands like print.*
@@ -637,7 +637,7 @@ last one.
 
 ### 3. Complex repeats
 
-| Status             | Command                      | Description
+|                    | Command                      | Description
 | :----------------- | :--------------------------- | -----------
 | :white_check_mark: | `q{0-9a-zA-Z"}`              | Record typed characters into register `{0-9a-zA-Z"}` (uppercase to append)
 | :white_check_mark: | `q`                          | Stops recording
@@ -651,7 +651,7 @@ last one.
 
 ### 2. Starting and stopping Visual mode
 
-| Status             | Command                       | Description
+|                    | Command                       | Description
 | :----------------- | :---------------------------- | -----------
 | :white_check_mark: | `v`                           | Start Visual mode per character
 | :white_check_mark: | `[count]V`                    | Start Visual mode linewise
@@ -663,7 +663,7 @@ last one.
 
 ### 3. Changing the Visual area
 
-| Status             | Command                       | Description
+|                    | Command                       | Description
 | :----------------- | :---------------------------- | -----------
 | :white_check_mark: | `o`                           | Go to Other end of highlighted text: The current cursor position becomes the start of the highlighted text and the cursor is moved to the other end of the highlighted text.  The highlighted area remains the same.
 | :white_check_mark: | `O`                           | Go to Other end of highlighted text.  This is like "o", but in Visual block mode the cursor moves to the other corner in the same line.  The highlighted area remains the same.
@@ -672,7 +672,7 @@ last one.
 
 - Vim reference: [various.txt](https://vimhelp.org/various.txt.html)
 
-| Status             | Command                              | Description
+|                    | Command                              | Description
 | :----------------- | :----------------------------------- | -----------
 | :white_check_mark: | `ga`                                 | Print the ascii value of the character under the cursor in dec, hex and oct.
 |                    | `:as[cii]`                           | Same as `ga`.
@@ -689,7 +689,7 @@ last one.
 
 ### 1. Command-line editing
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | -----------
 | :white_check_mark: | `<Left>`                         | Cursor left.
 | :white_check_mark: | `<Right>`                        | Cursor right.
@@ -711,7 +711,7 @@ last one.
 
 ### 2. Command-line completion
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | -----------
 | :white_check_mark: | `<S-Tab>`                        | Like `<Tab>`, but begin with the last match and then go to the previous match.
 | :white_check_mark: | `CTRL-N`                         | Go to next match.  Otherwise recall more recent command-line from history.
@@ -723,7 +723,7 @@ Some Ex commands accept a line range in front of them.  This is noted as `[range
 
 Line numbers may be specified with:
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | -----------
 | :white_check_mark: | `{number}`                       | An absolute line number.
 | :white_check_mark: | `.`                              | The current line.
@@ -743,7 +743,7 @@ Line numbers may be specified with:
 
 ### 1. Setting options
 
-| Status             | Command                                      | Description
+|                    | Command                                      | Description
 | :----------------- | :------------------------------------------- | -----------
 | :white_check_mark: | `:se[t] {option}?`                           | Show value of `{option}`.
 | :white_check_mark: | `:se[t] {option}`                            | Toggle option: set, switch it on. Number or String option: show value..
@@ -757,41 +757,38 @@ In the list below all the options are mentioned with their full name and with an
 
 Some options "proxy" to Sublime Text settings. This means that the option uses the underlying Sublime Text setting . Changing the option, changes the underlying Sublime Text setting. See this [blog post](https://blog.gerardroche.com/2023/06/05/neovintageous-options/) about options.
 
-| Status                          | Option                          | Type    | Default                                         | Description
-| :------------------------------ | :------------------------------ | :------ | :-----------------------------------------------| :----------
-| :white_check_mark: :star:       | `'autoindent'`<br>`'ai'`        | String  | `auto_indent` <br>sublime setting               |
-| :white_check_mark:              | `'belloff'`<br>`'bo'`           | String  | `''`; accepts 'all'                             |
-| :white_check_mark:              | `'equalalways'`                 | Boolean | On                                              |
-| :white_check_mark: :star:       | `'expandtab'`<br>`'et'`         | Boolean | `translate_tabs_to_spaces` <br>sublime setting  |
-| :white_check_mark:              | `'hlsearch'`<br>`'hls'`         | Boolean | On                                              | When there is a previous search pattern, highlight all its matches. See also: `'incsearch'`. When you get bored looking at the highlighted matches, you can turn it off with `:nohlsearch`.  This does not change the option value, as soon as you use a search command, the highlighting comes back.
-| :white_check_mark:              | `'ignorecase'`<br>`'ic'`        | Boolean | Off                                             |
-| :white_check_mark:              | `'incsearch'`<br>`'is'`         | Boolean | On                                              | While typing a search command, show where the pattern, as it was typed so far, matches.  The matched string is highlighted.  If the pattern is invalid or not found, nothing is shown.  The screen will be updated often.<br> Note that the match will be shown, but the cursor will return to its original position when no match is found and when pressing `<Esc>.`  You still need to finish the search command with `<Enter>` to move the cursor to the match.<br> When `'hlsearch'` is on, all matched strings are highlighted too while typing a search command. See also: `'hlsearch'.`
-| :white_check_mark: :star:       | `'list'`                        | Boolean | `draw_white_space` <br>sublime setting          | Useful to see the difference between tabs and spaces and for trailing blanks.
-| :white_check_mark:              | `'magic'`                       | Boolean | On                                              |
-| :white_check_mark:              | `'menu'`                        | Boolean | On                                              |
-| :white_check_mark:              | `'minimap'`                     | Boolean | On                                              |
-| :white_check_mark:              | `'modeline'`<br>`'ml'`          | Boolean | On                                              |
-| :white_check_mark:              | `'modelines'`<br>`'mls'`        | Number  | 5                                               |
-| :white_check_mark: :star:       | `'number'`<br>`'nu'`            | Boolean | `line_numbers` <br>sublime setting              | Print the line number in front of each line.
-| :white_check_mark: :star:       | `'relativenumber'`<br>`'rnu'`   | Boolean | `relative_line_numbers` <br>sublime setting     | Show the line number relative to the line with the cursor in front of each line. Relative line numbers help you use the `count` you can precede some vertical motion commands (e.g., `j` `k` `+` `-`) with, without having to calculate it yourself. Especially useful in combination with other commands (e.g., `y` `d` `c` `<` `>` `gq` `gw` `=`).
-| :white_check_mark: :star:       | `'scrolloff'`<br>`'so'`         | Number  | `scroll_context_lines` <br>sublime setting      |
-| :white_check_mark:              | `'shell'`                       | String  | `$SHELL` or `"sh"`, Win32: `"cmd.exe"`          |
-| :white_check_mark:              | `'sidebar'`                     | Boolean | On                                              |
-| :white_check_mark:              | `'smartcase'`<br>`'scs'`        | Boolean | Off                                             |
-| :white_check_mark: :star:       | `'spell'`                       | Boolean | `spell_check` <br>sublime setting               |
-| :white_check_mark:              | `'statusbar'`                   | Boolean | On                                              |
-| :white_check_mark: :star:       | `'tabstop'`<br>`'ts'`           | Number  | `tab_size` <br>sublime setting                  |
-| :white_check_mark: :star:       | `'textwidth'`<br>`'tw'`         | Number  | `wrap_width` <br>sublime setting                |
-| :white_check_mark:              | `'winaltkeys'`<br>`'wak'`       | String  | `menu`                                          |
-| :white_check_mark: :star:       | `'wrap'`                        | Boolean | `word_wrap` <br>sublime setting                 | This option changes how text is displayed.  It doesn't change the text in the buffer, see `'textwidth'` for that.<br> When on, lines longer than the width of the window will wrap and displaying continues on the next line.  When off lines will not wrap and only part of long lines will be displayed.  When the cursor is moved to a part that is not shown, the screen will scroll horizontally.| :white_check_mark:              | `'wrapscan'`<br>`'ws'`          | Boolean | On                                              |
-
-| Status                          | Option                          | Type    | Default                                         | Description
-| :------------------------------ | :------------------------------ | :------ | :---------------------------------------------- | :----------
-|                                 | `'clipboard'`                   | String  |                                                 | [#829](https://github.com/NeoVintageous/NeoVintageous/issues/829)
-|                                 | `'iskeyword'`<br>`'isk'`        | String  |                                                 | Keywords are used in searching and recognizing with many commands: "w", "*", "[i", etc. [#622](https://github.com/NeoVintageous/NeoVintageous/issues/622)
-|                                 | `'sidescrolloff'`<br>`'siso'`   | Number  | 5                                               | The minimal number of screen columns to keep to the left and to the right of the cursor if `'nowrap'` is set.
-|                                 | `'splitbelow'`<br>`'sb'`        | Boolean | Off                                             | When on, splitting a window will put the new window below the current one. `:split`
-|                                 | `'splitright'`<br>`'spr'`       | Boolean | Off                                             | When on, splitting a window will put the new window right of the current one. `:vsplit`
+|                                 | Option                          | Type    | Default                                         | Description |
+| :------------------------------ | :------------------------------ | :------ | :-----------------------------------------------| :---------- |
+| :white_check_mark:              | `'autoindent'`<br>`'ai'`        | String  | `auto_indent` <br>sublime setting               | :star: |
+| :white_check_mark:              | `'belloff'`<br>`'bo'`           | String  | `''`; accepts 'all'                             |             |
+| :white_check_mark:              | `'equalalways'`                 | Boolean | On                                              |             |
+| :white_check_mark:              | `'expandtab'`<br>`'et'`         | Boolean | `translate_tabs_to_spaces` <br>sublime setting  | :star: |
+| :white_check_mark:              | `'hlsearch'`<br>`'hls'`         | Boolean | On                                              | When there is a previous search pattern, highlight all its matches. See also: `'incsearch'`. When you get bored looking at the highlighted matches, you can turn it off with `:nohlsearch`.  This does not change the option value, as soon as you use a search command, the highlighting comes back. |
+| :white_check_mark:              | `'ignorecase'`<br>`'ic'`        | Boolean | Off                                             |             |
+| :white_check_mark:              | `'incsearch'`<br>`'is'`         | Boolean | On                                              | While typing a search command, show where the pattern, as it was typed so far, matches.  The matched string is highlighted.  If the pattern is invalid or not found, nothing is shown.  The screen will be updated often.<br> Note that the match will be shown, but the cursor will return to its original position when no match is found and when pressing `<Esc>.`  You still need to finish the search command with `<Enter>` to move the cursor to the match.<br> When `'hlsearch'` is on, all matched strings are highlighted too while typing a search command. See also: `'hlsearch'.` |
+| :white_check_mark:              | `'list'`                        | Boolean | `draw_white_space` <br>sublime setting          | Useful to see the difference between tabs and spaces and for trailing blanks. :star: |
+| :white_check_mark:              | `'magic'`                       | Boolean | On                                              |             |
+| :white_check_mark:              | `'menu'`                        | Boolean | On                                              |             |
+| :white_check_mark:              | `'minimap'`                     | Boolean | On                                              |             |
+| :white_check_mark:              | `'modeline'`<br>`'ml'`          | Boolean | On                                              |             |
+| :white_check_mark:              | `'modelines'`<br>`'mls'`        | Number  | 5                                               |             |
+| :white_check_mark:              | `'number'`<br>`'nu'`            | Boolean | `line_numbers` <br>sublime setting              | Print the line number in front of each line. :star: |
+| :white_check_mark:              | `'relativenumber'`<br>`'rnu'`   | Boolean | `relative_line_numbers` <br>sublime setting     | Show the line number relative to the line with the cursor in front of each line. Relative line numbers help you use the `count` you can precede some vertical motion commands (e.g., `j` `k` `+` `-`) with, without having to calculate it yourself. Especially useful in combination with other commands (e.g., `y` `d` `c` `<` `>` `gq` `gw` `=`). :star: |
+| :white_check_mark:              | `'scrolloff'`<br>`'so'`         | Number  | `scroll_context_lines` <br>sublime setting      | :star: |
+| :white_check_mark:              | `'shell'`                       | String  | `$SHELL` or `"sh"`, Win32: `"cmd.exe"`          |             |
+| :white_check_mark:              | `'sidebar'`                     | Boolean | On                                              |             |
+| :white_check_mark:              | `'smartcase'`<br>`'scs'`        | Boolean | Off                                             |             |
+| :white_check_mark:              | `'spell'`                       | Boolean | `spell_check` <br>sublime setting               | :star: |
+| :white_check_mark:              | `'statusbar'`                   | Boolean | On                                              |             |
+| :white_check_mark:              | `'tabstop'`<br>`'ts'`           | Number  | `tab_size` <br>sublime setting                  | :star: |
+| :white_check_mark:              | `'textwidth'`<br>`'tw'`         | Number  | `wrap_width` <br>sublime setting                | :star: |
+| :white_check_mark:              | `'winaltkeys'`<br>`'wak'`       | String  | `menu`                                          |             |
+| :white_check_mark:              | `'wrap'`                        | Boolean | `word_wrap` <br>sublime setting                 | This option changes how text is displayed.  It doesn't change the text in the buffer, see `'textwidth'` for that.<br> When on, lines longer than the width of the window will wrap and displaying continues on the next line.  When off lines will not wrap and only part of long lines will be displayed.  When the cursor is moved to a part that is not shown, the screen will scroll horizontally.| :white_check_mark:              | `'wrapscan'`<br>`'ws'`          | Boolean | On | :star: |
+|                                 | `'clipboard'`                   | String  |                                                 | [#829](https://github.com/NeoVintageous/NeoVintageous/issues/829)  |
+|                                 | `'iskeyword'`<br>`'isk'`        | String  |                                                 | Keywords are used in searching and recognizing with many commands: "w", "*", "[i", etc. [#622](https://github.com/NeoVintageous/NeoVintageous/issues/622) |
+|                                 | `'sidescrolloff'`<br>`'siso'`   | Number  | 5                                               | The minimal number of screen columns to keep to the left and to the right of the cursor if `'nowrap'` is set. |
+|                                 | `'splitbelow'`<br>`'sb'`        | Boolean | Off                                             | When on, splitting a window will put the new window below the current one. `:split` |
+|                                 | `'splitright'`<br>`'spr'`       | Boolean | Off                                             | When on, splitting a window will put the new window right of the current one. `:vsplit` |
 
 ## Regexp patterns and search commands
 
@@ -799,7 +796,7 @@ Some options "proxy" to Sublime Text settings. This means that the option uses t
 
 ### 1. Search commands
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | `/{pattern}<CR>`                 | Search forward for the `[count]`'th occurrence of `{pattern}` `exclusive`.
 | :white_check_mark: | `/<CR>`                          | Search forward for the `[count]`'th occurrence of the latest used pattern.
@@ -862,7 +859,7 @@ At present, the "Select" mode corresponds to the Multiple Cursor mode. In a fort
 
 Map the key sequence `{lhs}` to `{rhs}` for the modes where the map command applies.  Disallow mapping of `{rhs}`, to avoid nested and recursive mappings.  Often used to redefine a command.
 
-| Status             | Command                                              | Modes
+|                    | Command                                              | Modes
 | :----------------- | ---------------------------------------------------: | :----
 | :white_check_mark: | <code>:no[remap]&nbsp;\{lhs\}&nbsp;\{rhs\}</code>    | Normal, Visual, and Operator-pending modes.
 | :white_check_mark: | <code>:nn[oremap]&nbsp;\{lhs\}&nbsp;\{rhs\}</code>   | Normal mode.
@@ -878,7 +875,7 @@ Remove the mapping of `{lhs}` for the modes where the map command applies.  The 
 Trailing spaces are included in the `{lhs}`.
 :::
 
-| Status             | Command                                | Modes
+|                    | Command                                | Modes
 | :----------------- | -------------------------------------: | :----
 | :white_check_mark: | <code>:unm[ap]&nbsp;\{lhs\}</code>     | All modes.
 | :white_check_mark: | <code>:nun[map]&nbsp;\{lhs\}</code>    | Normal mode.
@@ -890,7 +887,7 @@ Trailing spaces are included in the `{lhs}`.
 
 Map the key sequence `{lhs}` to `{rhs}` for the modes where the map command applies.  The result, including `{rhs}`, is then further scanned for mappings.  This allows for nested and recursive use of mappings. Note: Trailing spaces are included in the `{rhs}`, because space is a valid Normal mode command.
 
-| Status             | Command                                        | Modes
+|                    | Command                                        | Modes
 | :----------------- | ---------------------------------------------: | :----
 |                    | <code>:map&nbsp;\{lhs\}&nbsp;\{rhs\}</code>    | Normal, Visual, and Operator-pending mode.
 |                    | <code>:nm[ap]&nbsp;\{lhs\}&nbsp;\{rhs\}</code> | Normal mode.
@@ -904,7 +901,7 @@ Map the key sequence `{lhs}` to `{rhs}` for the modes where the map command appl
 
 - Vim reference: [tagsrch.txt](https://vimhelp.org/tagsrch.txt.html)
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | CTRL-]                           | Jump to the definition of the keyword under the cursor.
 
@@ -918,7 +915,7 @@ Some window commands, such as `CTRL-w s`, `CTRL-w v`, `CTRL-w ]`, require [Origa
 
 ### 3. Opening and closing a window
 
-| Status             | Command                                                                    | Description
+|                    | Command                                                                    | Description
 | :----------------- | :------------------------------------------------------------------------- | :----------
 | :white_check_mark: | CTRL-W&nbsp;s<br>CTRL-W&nbsp;S<br>CTRL-W&nbsp;CTRL-S<br>:sp[lit] [file]    | Split current window in two.  The result is two viewports on the same file. The windows will be spread out if `'equalalways'` is set. If `[file]` is given it will be edited in the new window.
 | :white_check_mark: | CTRL-W&nbsp;CTRL-V<br>CTRL-W&nbsp;v<br>:vs[plit] [file]                    | Like :split, but split vertically. The windows will be spread out if `'equalalways'` is set.
@@ -932,7 +929,7 @@ Some window commands, such as `CTRL-w s`, `CTRL-w v`, `CTRL-w ]`, require [Origa
 
 #### Closing a window
 
-| Status             | Command                                                                    | Description
+|                    | Command                                                                    | Description
 | :----------------- | :------------------------------------------------------------------------- | :----------
 | :white_check_mark: | :q[uit]<br>CTRL-W&nbsp;q<br>CTRL-W&nbsp;CTRL-Q                             | Quit the current window.
 | :white_check_mark: | :q[uit]!                                                                   | If this was the last window for a buffer, any changes to that buffer are lost.  When quitting the last window (not counting help windows), exit Vim,
@@ -944,7 +941,7 @@ Some window commands, such as `CTRL-w s`, `CTRL-w v`, `CTRL-w ]`, require [Origa
 
 ### 4. Moving cursor to other windows
 
-| Status             | Command                                                                    | Description
+|                    | Command                                                                    | Description
 | :----------------- | :------------------------------------------------------------------------- | :----------
 | :white_check_mark: | CTRL-W &lt;Down&gt;<br>CTRL-W CTRL-J<br>CTRL-W j                           | Move cursor to Nth window below current one.
 | :white_check_mark: | CTRL-W &lt;Up&gt;<br>CTRL-W CTRL-K<br>CTRL-W k                             | Move cursor to Nth window above current one.
@@ -959,7 +956,7 @@ Some window commands, such as `CTRL-w s`, `CTRL-w v`, `CTRL-w ]`, require [Origa
 
 ### 5. Moving windows around
 
-| Status             | Command                                                      | Description
+|                    | Command                                                      | Description
 | :----------------- | :----------------------------------------------------------- | :----------
 |                    | CTRL-W r<br>CTRL-W&nbsp;CTRL-R                               | Rotate windows downwards/rightwards.  The first window becomes the second one, the second one becomes the third one, etc. The last window becomes the first window.  The cursor remains in the same window. This only works within the row or column of windows that the current window is in.
 |                    | CTRL-W R                                                     | Rotate windows upwards/leftwards.  The second window becomes the first one, the third one becomes the second one, etc.  The first window becomes the last window.  The cursor remains in the same window. This only works within the row or column of windows that the current window is in.
@@ -969,7 +966,7 @@ The following commands can be used to change the window layout.  For example,
 when there are two vertically split windows, CTRL-W K will change that in
 horizontally split windows.  CTRL-W H does it the other way around.
 
-| Status             | Command                                                      | Description
+|                    | Command                                                      | Description
 | :----------------- | :----------------------------------------------------------- | :----------
 | :white_check_mark: | CTRL-W K                                                     |  Move the current window to be at the very top, using the full width of the screen.  This works like closing the current window and then creating another one with `:topleft split`, except that the current window contents is used for the new window.
 | :white_check_mark: | CTRL-W J                                                     |  Move the current window to be at the very bottom, using the full width of the screen.  This works like closing the current window and then creating another one with `:botright split`, except that the current window contents is used for the new window.
@@ -979,7 +976,7 @@ horizontally split windows.  CTRL-W H does it the other way around.
 
 ### 6. Window resizing
 
-| Status             | Command                                                      | Description
+|                    | Command                                                      | Description
 | :----------------- | :----------------------------------------------------------- | :----------
 | :white_check_mark: | CTRL-W =                                                     | Make all windows (almost) equally high and wide.
 | :white_check_mark: | CTRL-W CTRL-_<br>CTRL-W \_                                   | Set current window height to N (default: highest possible).
@@ -989,7 +986,7 @@ When the option `'equalalways'` (`'ea'`) is set, all the windows are automatical
 
 ### 9. Tag or file name under the cursor
 
-| Status             | Command                                                      | Description
+|                    | Command                                                      | Description
 | :----------------- | :----------------------------------------------------------- | :----------
 | :white_check_mark: | CTRL-W ]<br>CTRL-W&nbsp;CTRL-]                               | Split current window in two.  Use identifier under cursor as a tag and jump to it in the new upper window. In Visual mode uses the Visually selected text as a tag. Same as CTRL-], except in a split window.
 | :white_check_mark: | CTRL-W gt                                                    | Go to next tab page, same as `gt`.
@@ -997,7 +994,7 @@ When the option `'equalalways'` (`'ea'`) is set, all the windows are automatical
 
 ### 11. Using hidden buffers
 
-| Status             | Command                                                      | Description
+|                    | Command                                                      | Description
 | :----------------- | :----------------------------------------------------------- | :----------
 | :white_check_mark: | :files<br>:buffers<br>:ls                                    | Show all buffers.
 | :white_check_mark: | `:b[uffer] [N]`                                              | Edit buffer `[N]` from the buffer list.  If `[N]` is not given, the current buffer remains being edited.
@@ -1017,7 +1014,7 @@ When the option `'equalalways'` (`'ea'`) is set, all the windows are automatical
 
 OPENING A NEW TAB PAGE:
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | :tabe[dit]<br>:tabnew            | Open a new tab page with an empty window, after the current tab page.
 | :white_check_mark: | CTRL-W&nbsp;gf                   | Open a new tab page and edit the file name under the cursor. See CTRL-W_gf.
@@ -1025,14 +1022,14 @@ OPENING A NEW TAB PAGE:
 
 CLOSING A TAB PAGE:
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | :tabc[lose]                      | Close current tab page.
 | :white_check_mark: | :tabo[nly]                       | Close all other tab pages.
 
 SWITCHING TO ANOTHER TAB PAGE:
 
-| Status             | Command                                                  | Description
+|                    | Command                                                  | Description
 | :----------------- | :------------------------------------------------------- | :----------
 | :white_check_mark: | `:tabn[ext]`<br>`<C-PageDown>`<br>`gt`                   | Go to the next tab page.  Wraps around from the last to the first one.
 | :white_check_mark: | `:tabp[revious]`<br>`:tabN[ext]`<br>`<C-PageUp>`<br>`gT` | Go to the previous tab page.  Wraps around from the first one to the last one.
@@ -1047,14 +1044,14 @@ SWITCHING TO ANOTHER TAB PAGE:
 
 To search for the next misspelled word:
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | \]s                              | Move to next misspelled word after the cursor. A count before the command can be used to repeat. `'wrapscan'` applies.
 | :white_check_mark: | \[s                              | Like "]s" but search backwards, find the misspelled word before the cursor.  Doesn't recognize words split over two lines, thus may stop at words that are not highlighted as bad.  Does not stop at word with missing capital at the start of a line.
 
 To add words to your own word list:
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | zg                               | Add word under the cursor as a good word to the first.  In Visual mode the selected characters are added as a word (including white space!).
 | :white_check_mark: | zuw<br>zug                       | Undo zg.
@@ -1063,7 +1060,7 @@ To add words to your own word list:
 
 Finding suggestions for bad words:
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | z=                               | For the word under/after the cursor suggest correctly spelled words.
 
@@ -1075,7 +1072,7 @@ Finding suggestions for bad words:
 
 Two commands can be used to jump to diffs:
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | [c                               | Jump backwards to the previous start of a change. When a count is used, do it that many times.
 | :white_check_mark: | ]c                               | Jump forwards to the next start of a change. When a count is used, do it that many times.
@@ -1088,7 +1085,7 @@ It is an error if there is no change for the cursor to move to.
 
 ### 7. Commands
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | `:let {var-name}={expr1}`        | Set internal variable `{var-name}` to the result of the expression `{expr1}.`  The variable will get the type from the `{expr}.`  If `{var-name}` didn't exist yet, it is created. <br>*Only "mapleader" and "maplocalleader" are currently supported.*<br>Example: `let mapleader=,`<br>Example: `let maplocalleader=,`
 
@@ -1102,7 +1099,7 @@ All folding commands start with "z".  Hint: the "z" looks like a folded piece of
 
 OPENING AND CLOSING FOLDS
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 | :white_check_mark: | zo                               | Open one fold under the cursor.
 | :white_check_mark: | zO                               | Same as zo.
@@ -1115,7 +1112,7 @@ OPENING AND CLOSING FOLDS
 
 - Vim reference: [quickfix.txt](https://vimhelp.org/quickfix.txt.html)
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 |                    | `:lne[xt]`                       |
 |                    | `:lN[ext]`<br>`:lp[revious]`     |
@@ -1127,7 +1124,7 @@ OPENING AND CLOSING FOLDS
 
 - Vim reference: [gui_w32.txt](https://vimhelp.org/gui_w32.txt.html)
 
-| Status             | Command                          | Description
+|                    | Command                          | Description
 | :----------------- | :------------------------------- | :----------
 |                    | `:simalt`                        | Simulate pressing `{key}` while holding Alt pressed. [#1004](https://github.com/NeoVintageous/NeoVintageous/issues/1004)
 
@@ -1135,7 +1132,7 @@ OPENING AND CLOSING FOLDS
 
 The following Vim plugins have been ported or have inspired implementations.
 
-| Status             | Plugin              | Reference
+|                    | Plugin              | Reference
 | :----------------- | :------------------ | :--------
 | :white_check_mark: | [Abolish](/plugins/abolish)                      | [vim-abolish](https://github.com/tpope/vim-abolish)
 | :white_check_mark: | [Commentary](/plugins/commentary)                | [vim-commentary](https://github.com/tpope/vim-commentary)
