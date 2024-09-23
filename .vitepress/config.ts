@@ -91,7 +91,7 @@ export default defineConfig({
       },
     ],
 
-    lastUpdated: true,
+    lastUpdated: false,
 
     editLink: {
       pattern: 'https://github.com/neovintageous/neovintageous.github.io/edit/main/src/:path',
