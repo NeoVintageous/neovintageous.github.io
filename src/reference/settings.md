@@ -186,14 +186,10 @@ Toggle the use of "kj" as an escape sequence in Insert mode.
 - Type: `boolean`
 - Default: `false`
 
-Override native save to handle LSP Code-Actions-On-Save.
-
-::: info
-See https://github.com/sublimelsp/LSP/issues/1725
-:::
+Map save commands like `:w` to LSP save routine.
 
 ::: info NOTE
-This may no longer be an issue in newer versions of LSP.
+You need to enable this if you have LSP code actions like `source.fixAll` and `source.organizeImports` enabled and want them to run on save commands like `:w`. See https://github.com/sublimelsp/LSP/issues/1725
 :::
 
 ## vintageous_reset_mode_when_switching_tabs
