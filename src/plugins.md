@@ -20,9 +20,7 @@ You do not need to install these plugins.
 | [Targets](/plugins/targets)                                                       | Port of [vim-targets](https://github.com/wellle/targets.vim).
 | [Unimpaired](/plugins/unimpaired)                                                 | Port of [vim-unimpaired](https://github.com/tpope/vim-unimpaired).
 
-For a comprehensive list of supported plugin features kindly consult the [roadmap](/roadmap#plugins).
-
-## Additional features plugins
+## Optional  plugins
 
 - [NeoVintageous Files](https://github.com/gerardroche/NeoVintageousFiles) - Enhance browsing files in the sidebar and overlays.
 - [NeoVintageous Highlight Line](https://github.com/gerardroche/NeoVintageousHighlightLine) - Auto-disable Highlight Line in Insert mode.
