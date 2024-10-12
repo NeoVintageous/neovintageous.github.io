@@ -2,10 +2,10 @@ import { defineConfig } from 'vitepress'
 import markdownItFootnote from 'markdown-it-footnote'
 
 export default defineConfig({
-  title: "NeoVintageous Docs",
-  description: "Documentation for NeoVintageous",
+  title: 'NeoVintageous Docs',
+  description: 'Documentation for NeoVintageous, a Vim emulator for Sublime Text',
   lang: 'en',
-  srcDir: "src",
+  srcDir: 'src',
   srcExclude: ['reusables/**'],
   cleanUrls: true,
 
@@ -14,12 +14,6 @@ export default defineConfig({
       label: 'English',
       lang: 'en',
     },
-    // es: { label: 'Spanish', lang: 'es' },
-    // fr: { label: 'French', lang: 'fr' },
-    // ga: { label: 'Irish', lang: 'ga' },
-    // ru: { label: 'Russian', lang: 'ru' },
-    // zh: { label: '简体中文', lang: 'zh' },
-    // ...
   },
 
   sitemap: {

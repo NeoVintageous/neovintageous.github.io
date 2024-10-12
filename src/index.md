@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: "NeoVintageous"
-  text: "ST Vim Engine"
-  tagline: "Explore the fastest, most reliable Vim engine for the Sublime Text editor."
+  text: "Vim Emulator for Sublime Text"
+  tagline: "Discover the fastest and most reliable Vim emulation for Sublime Text or any text editor or IDE."
   image:
     src: /zap.svg
     width: 100
@@ -21,10 +21,10 @@ features:
   - icon: 📕️
     title: The Guide
     link: /guide/getting-started
-    details: Includes general information on NeoVintageous and how it can be configured.
+    details: Essentials on getting started with NeoVintageous.
   - icon: ⚡
     title: The Plugins
     link: /plugins
-    details: Find details on bundled plugins, their usage, and additional third-party plugins.
+    details: Everything you need to know about plugins.
 ---
 

@@ -22,10 +22,10 @@ You do not need to install these plugins.
 
 ## Optional  plugins
 
-- [NeoVintageous Files](https://github.com/gerardroche/NeoVintageousFiles) - Enhance browsing files in the sidebar and overlays.
+- [NeoVintageous Files](https://github.com/gerardroche/NeoVintageousFiles) - Enhance browsing files in the sidebar and in overlays.
 - [NeoVintageous Highlight Line](https://github.com/gerardroche/NeoVintageousHighlightLine) - Auto-disable Highlight Line in Insert mode.
 - [NeoVintageous Line Numbers](https://github.com/gerardroche/NeoVintageousLineNumbers) - Auto-disable Relative Line Numbers in Insert mode.
-- [NeoVintageous Toggle](https://github.com/NeoVintageous/NeoVintageousToggle) - Toggle NeoVintageous on/off.
+- [NeoVintageous Toggle](https://github.com/NeoVintageous/NeoVintageousToggle) - Toggle NeoVintageous on and off.
 - [NeoVintageous Colemak](https://github.com/gerardroche/NeoVintageousColemak) - Colemak mappings.
 - [NeoVintageous Dvorak](https://github.com/gerardroche/NeoVintageousDvorak) - Dvorak mappings.
 - [Origami](https://github.com/SublimeText/Origami) - Required for some window commands e.g. `CTRL-w s`, `CTRL-w ]`.
