@@ -23,13 +23,13 @@ outline: deep
 1. Clone NeoVintageous into the Sublime Text directory:
    ::: code-group
    ``` [Linux]
-   git clone https://github.com/NeoVintageous/NeoVintageous.git ~/.config/sublime-text/Packages/NeoVintageous
+   git clone https://github.com/NeoVintageous/NeoVintageous.git "${XDG_CONFIG_HOME:-$HOME/.config}/sublime-text/Packages/NeoVintageous"
    ```
    ``` [Mac]
    git clone https://github.com/NeoVintageous/NeoVintageous.git ~/Library/Application\ Support/Sublime\ Text/Packages/NeoVintageous
    ```
    ``` [Windows]
-   git clone https://github.com/NeoVintageous/NeoVintageous.git %APPDATA%\Sublime\ Text\Packages\NeoVintageous
+   git clone https://github.com/NeoVintageous/NeoVintageous.git "%APPDATA%\Sublime Text\Packages\NeoVintageous"
    ```
    :::
 1. Restart Sublime Text
