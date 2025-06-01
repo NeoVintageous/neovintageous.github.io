@@ -26,10 +26,10 @@ outline: deep
    git clone https://github.com/NeoVintageous/NeoVintageous.git ~/.config/sublime-text/Packages/NeoVintageous
    ```
    ``` [Mac]
-   git clone https://github.com/NeoVintageous/NeoVintageous.git ~/Library/Application Support/Sublime Text/Packages/NeoVintageous
+   git clone https://github.com/NeoVintageous/NeoVintageous.git ~/Library/Application\ Support/Sublime\ Text/Packages/NeoVintageous
    ```
    ``` [Windows]
-   git clone https://github.com/NeoVintageous/NeoVintageous.git %APPDATA%\Sublime Text\Packages\NeoVintageous
+   git clone https://github.com/NeoVintageous/NeoVintageous.git %APPDATA%\Sublime\ Text\Packages\NeoVintageous
    ```
    :::
 1. Restart Sublime Text
