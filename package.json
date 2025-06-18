@@ -4,7 +4,7 @@
   "devDependencies": {
     "markdown-it-footnote": "^4.0.0",
     "vitepress": "^1.6.3",
-    "vue": "^3.5.16"
+    "vue": "^3.5.17"
   },
   "scripts": {
     "docs:dev": "vitepress dev",
