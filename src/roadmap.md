@@ -371,6 +371,10 @@ For the following four commands the cursor follows the screen.  If the character
 
 ### 7. Insert mode completion
 
+|                    | Command                                        | Description
+| :----------------- | :--------------------------------------------- | :----------
+| :white_check_mark: | CTRL-Y                                         | When the popup menu is displayed you can use CTRL-Y to stop completion and accept the currently selected entry.  The CTRL-Y is not inserted.  Typing a space, Enter, or some other unprintable character will leave completion mode and insert that typed character.
+
 Completing whole lines
 
 |                    | Command                                        | Description
