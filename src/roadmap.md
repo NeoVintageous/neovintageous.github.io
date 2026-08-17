@@ -249,6 +249,8 @@ FORCING A MOTION TO BE LINEWISE, CHARACTERWISE OR BLOCKWISE
 | :white_check_mark: | `i}`<br>`i{`<br>`iB`          | "inner block", select blocks, from "[\{" to the matching '\}', excluding the '\{' and '\}'.
 | :white_check_mark: | `a"`<br>`a'`<br><code>a\`</code> | Selects the text from the previous quote until the next quote.
 | :white_check_mark: | `i"`<br>`i'`<br><code>i\`</code> | Like `a"`, `a'` and <code>a\`</code>, but exclude the quotes.
+| :white_check_mark: | `il`                          | :star: select the current line without leading/trailing whitespace or the line break.
+| :white_check_mark: | `al`                          | :star: select the whole buffer linewise.
 
 ### 7. Marks
 
