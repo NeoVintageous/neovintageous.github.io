@@ -8,7 +8,7 @@ Enable yank highlighting.
 ### vintageous_highlighted_yank_duration
 
 - Type: `integer`
-- Default: `1000`
+- Default: `150`
 
 Assign number of time in milliseconds.
 
