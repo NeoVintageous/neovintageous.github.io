@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 import markdownItFootnote from 'markdown-it-footnote'
 
 export default defineConfig({
-  title: 'NeoVintageous Docs',
-  description: 'Documentation for NeoVintageous, a Vim emulator for Sublime Text',
+  title: 'NeoVintageous',
+  description: 'Website and documentation for NeoVintageous, a Vim emulator for Sublime Text',
   lang: 'en',
   srcDir: 'src',
   srcExclude: ['reusables/**'],

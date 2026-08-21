@@ -4,7 +4,7 @@ This repository contains the documentation website code and Markdown source file
 
 ## Contributing
 
-On the NeoVintageos Docs site, you can contribute by clicking the **Edit this page** link at the bottom of the page to open a pull request.
+On the site, you can contribute by clicking the **Edit this page** link at the bottom of the page to open a pull request.
 
 ## License
 
